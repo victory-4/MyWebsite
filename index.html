@@ -3,13 +3,187 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Yuyu&display=swap" rel="stylesheet">
     <title>
         A luta continua; vitória é certa
     </title>
-    
+<style>
+    body {
+        background-image: url('relaxinpsych.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        min-height: 100vh;
+        margin: 0;
+        font-family: 'Yuyu', cursive;
+        line-height: 1.6;
+    }
+
+    .top-header {
+        width: 100%;
+        padding: 16px 24px;
+        background: rgba(255, 255, 255, 0.75);
+        position: fixed;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        box-sizing: border-box;
+        z-index: 10;
+    }
+
+    .top-header .brand {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .top-header .brand img {
+        width: 48px;
+        height: 48px;
+        border-radius: 12px;
+        object-fit: cover;
+    }
+
+    .top-header .brand span {
+        color: black;
+        font-weight: bold;
+        font-size: 18px;
+    }
+
+    .top-header nav {
+        display: flex;
+        gap: 30px;
+        align-items: center;
+    }
+
+    .top-header a {
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+        font-size: 18px;
+    }
+
+    .container {
+        max-width: 1000px;
+        margin: 100px auto 40px;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .hero-card,
+    .section-card {
+        background: rgba(255, 255, 255, 0.88);
+        border-radius: 20px;
+        padding: 24px;
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+    }
+
+    .hero-card {
+        text-align: center;
+    }
+
+    #header1 {
+        color: black;
+        font-size: 34px;
+        font-weight: bold;
+        font-family: Algerian, serif;
+        margin-bottom: 10px;
+    }
+
+    #welcome-message {
+        color: #4b2c6b;
+        font-size: 24px;
+        font-weight: bold;
+        font-family: "Dreaming Outloud Pro", cursive;
+        margin: 0 0 10px;
+    }
+
+    #header2 {
+        color: #2e1f4d;
+        font-size: 24px;
+        font-weight: bold;
+        margin: 0;
+    }
+
+    .section-card h2 {
+        color: #4b2c6b;
+        margin-top: 0;
+        margin-bottom: 10px;
+        font-size: 28px;
+    }
+
+    .section-card p,
+    .section-card li {
+        color: #333;
+        font-size: 18px;
+    }
+
+    .section-card ul {
+        padding-left: 20px;
+    }
+
+    .step-list {
+        padding-left: 20px;
+    }
+</style>
 </head>
 <body>
-    <p>Hello Lovely World!</p>
+    <header class="top-header">
+        <div class="brand">
+            <img src="Your DUTY Your HEALTH.png" alt="Your duty logo">
+            <span>Victory</span>
+        </div>
+        <nav>
+            <a href="#about">About Us</a>
+            <a href="#how-it-works">How It Works</a>
+            <a href="#who-it-for">Who's It For</a>
+        </nav>
+    </header>
 
+    <div class="container">
+        <div class="hero-card">
+            <h1 id="header1">Hello Lovely World!</h1>
+            <p id="welcome-message">Welcome to my lovely website</p>
+            <h2 id="header2">A luta continua; vitória é certa</h2>
+        </div>
+
+        <section id="about" class="section-card">
+            <h2>About Us</h2>
+            <p><strong>Your DUTY? Your HEALTH</strong> is a wellness space created for people who want to care for their mental, emotional, and physical well-being. We believe that mental wellness is just as important as physical health, and we provide a safe, supportive environment where healing, balance, and self-care can grow.</p>
+            <p>Our mission is to help individuals manage stress, anxiety, burnout, and emotional challenges through compassionate care and holistic support. Choosing your health is a powerful step toward living a healthier, happier life.</p>
+        </section>
+
+        <section id="how-it-works" class="section-card">
+            <h2>How It Works</h2>
+            <ol class="step-list">
+                <li><strong>Book Your Appointment:</strong> Choose the service that fits your needs and schedule a session online.</li>
+                <li><strong>Personal Consultation:</strong> Meet with a wellness professional to discuss your goals, concerns, and lifestyle.</li>
+                <li><strong>Receive Your Wellness Plan:</strong> We create a personalized plan that may include therapy, meditation, spa care, fitness, or a combination of services.</li>
+                <li><strong>Begin Your Journey:</strong> Attend your sessions and follow your plan as you heal, grow, and build balance.</li>
+                <li><strong>Continuous Support:</strong> We continue to guide and support you as your wellness journey evolves.</li>
+            </ol>
+        </section>
+
+        <section id="who-it-for" class="section-card">
+            <h2>Who It's For</h2>
+            <ul>
+                <li>Students facing academic pressure and stress.</li>
+                <li>Professionals dealing with burnout and workplace stress.</li>
+                <li>Individuals managing anxiety, depression, or emotional struggles.</li>
+                <li>Couples and families seeking healthier relationships.</li>
+                <li>People healing from grief or trauma.</li>
+                <li>Anyone who wants to improve self-care and overall wellness.</li>
+            </ul>
+            <p>You do not need to be in crisis to benefit from mental wellness. Prevention, self-care, and healthy habits are important for everyone.</p>
+        </section>
+    </div>
 </body>
 </html>
